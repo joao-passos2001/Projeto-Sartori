@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+
+
+    <div class="form-conteiner">
+        <form class="form-contentx" id="form" onsubmit="zika();return false">
+            <label for="nome-cliente"> Coloque o nome do cliente</label><br>
+            <input type="text" id="nome-cliente" name="nome-cliente"><br>
+
+            <div class="section1">
+                <label for="tel-guincho">Telefone Guincho <input list="nomesguincho" id="guincho" name="guincho">   </label>
+
+                <datalist id="nomesguincho">
+                    <option value="Tokio Sinistro: 0800 31 86546"></option>
+                    <option value="Mapfre 24h: 0800 775 4545"></option>
+                    <option value="Bradesco: 4004-2780"></option>
+                    <option value="Allianz: 08000 130 700"></option>
+                    <option value="Azul Seguros: 4004-37000"></option>
+                    <option value="Suhai: 3003-0335"></option>
+                    <option value="Porto Seguro: 3337-6786"></option>
+                    <option value="Mapfre: 4004-0101"></option>
+                    <option value="Sompro Seguros: 3156-2990"></option>
+                    <option value="Aliro Seguros 3003-2127"></option>
+                    <option value="Bradesco Seguros: 4004-2757"></option>
+                    <option value="Allianz Seguros:4090-1110"></option>
+                    <option value="HDI Seguros: 3003-5390"></option>
+                </datalist>
+                
+                
+                <label for="sac-novo"> Modelo do carro <input type="text" id="sac-novo" name="sac-novo"></label> 
+                <label for="form-sartori">Telefone Sartori <input type="text" id="form-sartori" name="form-sartori"></label>
+
+                <label for="contrato"> Vigencia  <input type="text" id="contrato" name="contrato"><br></label> 
+ 
+            </div>
+
+            <div class="button-section">
+                <input type="submit" value="Enviar">
+                <button id="dl-button"> Salvar Imagem</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="capture">
+        <div class="conteiner-cart">
+        
+            <div class="header-cartao"></div>        
+            <div class="content-cartao">
+
+                <div class="cliente-nome" id="showname"><span>Nome</span> <label id="label-nome" ></label>
+                </div>
+                
+                
+                <div class="tel-duvida" id="tel-duvida"><span>Modelo do carro</span><label id="label-sac" ></label></div>  
+                <div class="tel-guincho" id="telprof"><span>Assistencia 24Horas</span> <label id="label-guincho" ></label>
+                </div>
+                
+                <div class="tel-contrato" id="tel-contrato"><span>Vigencia</span><label id="label-contrato" ></label></div>
+
+                <div class="telefone-sartori"><span>Telefone Sartori</span><label id="label-sartori"></label></div>
+            </div>            
+        </div>
+    </div>
+
+
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
