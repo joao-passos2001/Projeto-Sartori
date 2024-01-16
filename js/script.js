@@ -4,6 +4,10 @@
     var sac = document.getElementById('sac-novo');
     var contrato = document.getElementById('contrato');
     var sartori = document.getElementById('form-sartori');
+
+
+
+
     form.addEventListener('submit', function Pegar_Nome(e) {
         // alerta o valor do campo
         //alert(cliente.value);
@@ -22,13 +26,16 @@
    
         document.getElementById("dl-button").onclick = function(){
             const screenshotTarget = document.getElementById('capture');
+                // screenshotTarget.crossOrigin="anonymous";
 
             html2canvas(screenshotTarget).then((canvas) => {
                 const base64image = canvas.toDataURL("image/png");
                 var anchor = document.createElement('a');
 
-                anchor.setAttribute("href" , base64image);
-                anchor.setAttribute("download","my-image.png")
+                // anchor.setAttribute("href" , base64image);
+                // anchor.setAttribute("download","my-image.png")
+                anchor.href = base64image;
+                anchor.download = "my-image.png";
                 anchor.click();
                 anchor.remove();
             });
