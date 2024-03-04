@@ -142,15 +142,7 @@ input[type=submit]:hover{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color: black;
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-image: url("../assets/logobranca.png");
-=======
-    background-image: url("https://raw.githubusercontent.com/joao-passos2001/Projeto-Sartori/main/logobranca.png");
->>>>>>> 60848d8fdeaa7c4c29d58d5c2e2929a03eb49e67
-=======
-    background-image: url("https://raw.githubusercontent.com/joao-passos2001/Projeto-Sartori/main/logobranca.png");
->>>>>>> 60848d8fdeaa7c4c29d58d5c2e2929a03eb49e67
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: left;
