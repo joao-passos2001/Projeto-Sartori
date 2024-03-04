@@ -56,6 +56,17 @@ input[type=text]{
     background-color: white     ;
 }
 
+#form-sartori{
+    font-size: x-large;
+    width: 100%;
+    margin-bottom: 1%;
+    border-top: none;
+    border-right: none;
+    height:fit-content;
+    border-radius:5px;
+    background-color: white     
+
+}
 
 #nome-cliente{
     background-color: white;
@@ -131,7 +142,15 @@ input[type=submit]:hover{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color: black;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-image: url("../assets/logobranca.png");
+=======
     background-image: url("https://raw.githubusercontent.com/joao-passos2001/Projeto-Sartori/main/logobranca.png");
+>>>>>>> 60848d8fdeaa7c4c29d58d5c2e2929a03eb49e67
+=======
+    background-image: url("https://raw.githubusercontent.com/joao-passos2001/Projeto-Sartori/main/logobranca.png");
+>>>>>>> 60848d8fdeaa7c4c29d58d5c2e2929a03eb49e67
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: left;
@@ -196,6 +215,7 @@ label{
     box-sizing: border-box;
     display: grid;
     grid-gap:10px;
+    align-items: baseline;
 }
 
 .telefone-sartori{

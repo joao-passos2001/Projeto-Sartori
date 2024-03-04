@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/server.js"></script>
 </head>
 <body>
 
@@ -35,9 +37,13 @@
                 
                 
                 <label for="sac-novo"> Modelo do carro <input type="text" id="sac-novo" name="sac-novo"></label> 
-                <label for="form-sartori">Telefone Sartori <input type="text" id="form-sartori" name="form-sartori"></label>
+                <label for="form-sartori">Telefone Sartori <input list="tel-sartori" id="form-sartori" name="form-sartori"></label>
+                <datalist id="tel-sartori">
+                    <option value="(11) 4977-4222"></option>
+                </datalist>
+                
 
-                <label for="contrato"> Vigencia  <input type="text" id="contrato" name="contrato"><br></label> 
+                <label for="contrato"> Válido até:<input type="text" id="contrato" name="contrato"><br></label> 
  
             </div>
 
@@ -51,7 +57,9 @@
     <div id="capture">
         <div class="conteiner-cart">
         
-            <div class="header-cartao" id="header-cartao-image"></div>        
+            <div class="header-cartao" id="header-cartao-image">
+    
+            </div>        
             <div class="content-cartao">
 
                 <div class="cliente-nome" id="showname"><span>Nome</span> <label id="label-nome" ></label>
@@ -62,7 +70,7 @@
                 <div class="tel-guincho" id="telprof"><span>Assistencia 24Horas</span> <label id="label-guincho" ></label>
                 </div>
                 
-                <div class="tel-contrato" id="tel-contrato"><span>Vigencia</span><label id="label-contrato" ></label></div>
+                <div class="tel-contrato" id="tel-contrato"><span>Válido até:</span><label id="label-contrato" ></label></div>
 
                 <div class="telefone-sartori"><span>Telefone Sartori</span><label id="label-sartori"></label></div>
             </div>            
@@ -70,7 +78,7 @@
     </div>
 
 
-    <script src="js/html2canvas.min.js"></script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
